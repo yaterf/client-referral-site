@@ -177,8 +177,8 @@
 
   <header class="hero">
     <div class="wrap">
-      <h1>Refer a landlord.<br>You <span class="free">both</span> get a month free.</h1>
-      <p>Send us one owner who needs better management. When they sign, you and the owner you referred each get a month of management free.</p>
+      <h1>Refer a landlord.<br>You <span class="free">both</span> get a month free!</h1>
+      <p>Send us one owner who needs better management. When they sign, you and the owner you referred each get a month of management free. It's that simple!</p>
     </div>
   </header>
 
@@ -285,6 +285,8 @@
        CONFIG: paste your Make (Integromat) webhook URL here.
        Get it from the "Custom webhook" module in your scenario.
        ========================================================= */
+    // Make.com webhook (Client Referral Landing scenario -> Gmail relay -> LeadSimple).
+    // Everything except the Name lands in the LeadSimple lead's comments, by design.
     var MAKE_WEBHOOK_URL = "https://hook.us2.make.com/irvr5tv78xiedfpkfo657mxcn47xnlv8";
 
     var form        = document.getElementById("referForm");
